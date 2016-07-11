@@ -1,0 +1,66 @@
+header {
+    background-color: black;
+    padding:10px;
+    margin-bottom: 0px;
+}
+.navbar {
+  position: realtive;
+  margin-bottom: 200px;
+}
+
+h1 {
+    color: white !important;
+    font-size: 4em;
+}
+h2 {
+    color: white !important;
+}
+
+.niceText {
+    font-style: italic;
+    color:lightgreen;
+}
+
+.btn {
+ display: flex; 
+justify-content: center;
+margin-left: 100px;
+color: black;
+}
+.logo {
+position: absolute;
+width: 130x;
+height: 130px;
+right: 20px;
+z-index:999;
+}
+
+
+
+.card {
+    width:170px;
+    height:192px;
+    float:left;
+    margin: 10px;
+}
+
+.card img {
+    position: absolute;
+}
+
+.card.flipped .back{
+    display:none;
+}
+
+#main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#main {
+   margin-top: 0px;
+   background-color: lightgray;
+}
+.front {
+  width: 140px;
+}

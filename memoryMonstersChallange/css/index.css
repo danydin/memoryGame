@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 44px;
+  padding-bottom: auto;
+  position: relative;
+}
+.scroll {
+    overflow: auto;
+    height: 100%;
+    padding: 0;
+  margin-left: 37px;}
+
+.img-responsive {width: 400px;
+height: 500px;
+overflow: auto;
+display: incline-inblock;

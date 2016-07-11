@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="css/app.css"/>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+</head>
+<body>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+       <a class="navbar-brand href="#top"" id="top"> Dean</a>
+     </div>
+       
+     <ul class="nav navbar-nav navbar-right">
+       <li class="activate"> <a href="index.html"> ABOUT </a> </li>
+       <li> <a href="#top"> CARDS GAME </a> </li>
+       <li><a href="index.html"> CONTACT</a></li> </ul>
+       </div>
+     </nav>
+  <!--Main grid-->
+  <br><br>
+    <header class="box">
+        <img src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064622/logo_jbdzfk.png" class="logo" />
+        <h1>Memory Monsters</h1>
+        <h2>Where we <span class="niceText">Scare</span> people Off
+   <button id="foo" type="button" class="btn" onclick="shuffle();">
+          Restart Game!</button>
+ <button type="button" value="click" class="btn" onclick="shuffle();">Shuffle</button></div> 
+          </h2>
+    </header>
+    <div class="board" id="main">
+      
+        <div class="card" data-card="1" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064604/1_plrmj0.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="2" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064604/2_bykxuj.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="1" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064604/1_plrmj0.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="2" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064604/2_bykxuj.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="3" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064604/3_wgtknx.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="4" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064602/4_jg6e9r.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="3" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064604/3_wgtknx.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="4" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064602/4_jg6e9r.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="5" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064602/5_ttd5mn.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="6" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/6_yk8qwj.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="5" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064602/5_ttd5mn.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+        <div class="card" data-card="6" onclick="cardClicked(this)">
+            <img class="front" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/6_yk8qwj.png">
+            <img class="back" src="https://res.cloudinary.com/dy4voxduv/image/upload/v1468064603/back_e4mcye.png" >
+        </div>
+
+    </div>
+
+
+  <script src="js/app.js"></script>
+ 
+</body>
+</html>
